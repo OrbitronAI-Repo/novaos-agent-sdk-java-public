@@ -17,7 +17,7 @@ auth is a token + GPG signing key stored as GitHub Actions secrets.
 5. Add these repo secrets (Settings → Secrets → Actions):
    - `CENTRAL_TOKEN_USERNAME`, `CENTRAL_TOKEN_PASSWORD` (from step 3)
    - `GPG_PRIVATE_KEY` (armored private key export: `gpg --export-secret-keys --armor <KEYID>`)
-   - `GPG_PASSPHRASE`
+   - `GPG_PASSPHRASE` (only if you set one on the key; omit if empty)
 
 ## Release Checklist
 
